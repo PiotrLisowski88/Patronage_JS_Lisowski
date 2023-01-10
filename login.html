@@ -1,0 +1,31 @@
+<!-- plik: login.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logowanie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style_log.css" />
+</head>
+<body>
+<header>
+  <a href="login.html" class="action-button">Logowanie</a>
+  <a href="register.html" class="action-button register-button">Rejestracja</a>
+</header>
+<main>
+  <form id="login-form">
+    <div class="form-group">
+      <label for="username">Nazwa użytkownika</label>
+      <input type="text" id="username" name="username" />
+    </div>
+    <div class="form-group">
+      <label for="password">Hasło</label>
+      <input type="password" id="password" name="password" />
+    </div>
+    <button type="submit">Zaloguj</button>
+  </form>
+</main>
+<script src="scripts_login.js"></script>
+</body>
+</html>
