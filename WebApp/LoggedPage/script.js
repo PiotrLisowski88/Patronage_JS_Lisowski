@@ -12,7 +12,7 @@ document.getElementById("username").innerHTML = username;
 fetch("https://api.npoint.io/38edf0c5f3eb9ac768bd")
   .then(response => response.json())
   .then(data => {
-    // Tworzenie tabeli transakcji
+    // Table content
     let transactionsList = document.getElementById("transactions-list");
     data.transactions.forEach(transaction => {
       let row = document.createElement("tr");
@@ -34,7 +34,7 @@ fetch("https://api.npoint.io/38edf0c5f3eb9ac768bd")
       transactionsList.appendChild(row);
     });
 
-    // Tworzenie wykresów
+    // Chart creation
     let chartsContainer = document.getElementById("charts");
     let chart = new Chart(chartsContainer, {
       type: 'line',

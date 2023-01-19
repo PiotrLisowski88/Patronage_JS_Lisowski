@@ -11,7 +11,7 @@ loginForm.addEventListener("submit", (event) => {
   // checking if the fields are empty
   if (username === "" || password === "") {
     // showing an error if any of the fields are empty
-    alert("Both fields are required!");
+    alert("Uzupełnij obydwa pola");
     return;
   }
   
@@ -24,7 +24,7 @@ loginForm.addEventListener("submit", (event) => {
     
   if (!user) {
     // showing an error if no user is found with the given username and password
-    alert("Incorrect username or password!");
+    alert("Niepoprawna nazwa użytkownika lub hasło");
     return;
   }
   
