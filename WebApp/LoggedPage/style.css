@@ -77,30 +77,4 @@ main {
   height: 300px;
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  #transactions {
-    overflow-x: scroll;
-  }
-
-  #transactions th, #transactions td {
-    display: block;
-  }
-
-  #transactions td {
-    border-top: none;
-  }
-
-  #transactions tr {
-    margin-bottom: 16px;
-  }
-
-  #transactions .transaction-details {
-    display: none;
-  }
-
-  #transactions tr.open .transaction-details {
-    display: block;
-  }
-}
 
